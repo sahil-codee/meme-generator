@@ -57,14 +57,18 @@ main {
 }
 
 .meme--image {
-  width: 30%;
+  margin-top: 10px;
+  margin-left: 26%;
+  width: 600px;
+  height: 350px;
+  display: inline-block;
 }
 
 .meme--text {
   position: absolute;
   width: 80%;
   text-align: center;
-  left: 17%;
+  left: 50%;
   transform: translateX(-50%);
   margin: 15px 0;
   padding: 0 5px;
@@ -86,9 +90,9 @@ main {
 }
 
 .bottom {
-  bottom: 30%;
+  bottom: 20%;
 }
 
 .top {
-  top: 30%;
+  top: 33%;
 }

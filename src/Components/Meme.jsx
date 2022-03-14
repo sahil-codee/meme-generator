@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 // import memeData from '../memeData'
 
 function Meme() {
-
+  
   const [meme, setMeme] = useState({
     topText: "",
     bottomText: "",
@@ -22,9 +22,8 @@ function Meme() {
   useEffect(() => {
     fetch("https://api.imgflip.com/get_memes")
     .then(res => res.json())
-    .then(data => setAllMemeImages(data.data.memes))
+    .then(data =>  setAllMemeImages(data.data.memes))
   }, [])
-
 
   // console.log(memeData)
   function getMemeImage() {
@@ -37,7 +36,6 @@ function Meme() {
       }));
       // console.log(memesArray[randomMeme].url)  
   }
-
 
   return (
     <main>
